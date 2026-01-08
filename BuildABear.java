@@ -19,7 +19,7 @@ public class BuildABear {
     // what gets called when user says "= new BuildABear"
     public BuildABear() {
         this.type = "bear"; // WE PICK the initial values!
-        this.name = "Dontavious";
+        this.name = "Bonquisha";
         this.fillLevel = 75;
         this.price = 150.00;
         this.hasSpeaker = false;
@@ -32,10 +32,36 @@ public class BuildABear {
      this.name = n;
      this.fillLevel = fl;
      this.price = 150.00;  
-     this.hasSpeaker = fale;
+     this.hasSpeaker = false;
      this.recording = "";
     }
 
     // 3. METHODS (behaviors/actions)
 
-}
+    // ACCESSORS ("getters") return the value of an instance var.
+    public String getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getfillLevel() {
+        return fillLevel;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    // Write a toString() method so that we can print an object's STATE
+    // including this method changes what happens when you print an object
+    // otherwise, doing System.out.println(object) just shows you a memory type
+    public String toString() {
+        String state = "BuildABear[" + type + "," + name + "," + fillLevel + price + "]" ; 
+        return state;
+    }
+
+
+} // end class
